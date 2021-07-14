@@ -1,6 +1,5 @@
 package gerenciamento;
 
-import java.util.ArrayList;
 import java.util.Date;
 
 public class Transaction {
@@ -39,6 +38,12 @@ public class Transaction {
 	public Transaction(double amount, String description, Account account) {
 		this(amount, account);
 		this.description = description;
+	}
+	/**
+	 * Retorna a quantia da transação	
+	 */
+	public double getAmount() {
+		return this.amount;
 	}
 	
 	public String showSummaryLine() {
